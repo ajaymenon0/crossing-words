@@ -1,0 +1,66 @@
+.crossword-container {
+  float: left;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  width: 526px;
+  height: 526px;
+}
+
+.tile {
+  position: relative;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .hor .tile.active {
+  background-color: honeydew;
+}
+
+.ver .tile.active {
+  background-color: burlywood;
+} */
+
+.tile.lit {
+  background-color: aquamarine;
+}
+
+.tile input {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  outline: none; /* Not a great idea to do for a11y, so temp */
+}
+
+.tile .tilenum {
+  font-size: 8px;
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.blank input {
+  background-color: #333;
+}
+
+.tile.blank {
+  background-color: #333;
+  color: #333;
+}
+
+.clues {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 5px;
+}
+
+.clues h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
